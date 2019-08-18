@@ -1,4 +1,5 @@
-const Products = require('../../models/products/products.js');
+
+const Products = require('../models/products/products.js');
 let products = new Products();
 
 const supergoose = require('./supergoose');
@@ -7,7 +8,7 @@ describe('Products Model (Modular)', () => {
 
   it('can create() a new product', () => {
     let obj = { name: 'chair', description: 'recliner' };
-    return products.create(obj)
+    return products.post(obj)
       .then(record => {
         Object.keys(obj).forEach(key => {
           expect(record[key]).toEqual(obj[key]);
@@ -17,7 +18,7 @@ describe('Products Model (Modular)', () => {
 
   it('can get() a product', () => {
     let obj = { name: 'chair', description: 'recliner' };
-    return products.create(obj)
+    return products.post(obj)
       .then(record => {
         // console.log(record);
         return products.get(record._id)
@@ -32,7 +33,7 @@ describe('Products Model (Modular)', () => {
 
   it('can update() a product', () => {
     let obj = { name: 'chair', description: 'recliner' };
-    return products.create(obj)
+    return products.post(obj)
       .then(record => {
         // console.log(record);
         return products.get(record._id)
@@ -47,7 +48,7 @@ describe('Products Model (Modular)', () => {
 
   it('can get() all product', () => {
     let obj = { name: 'chair', description: 'recliner' };
-    return products.create(obj)
+    return products.post(obj)
       .then(record => {
         // console.log(record);
         return products.get(record._id)
@@ -62,7 +63,7 @@ describe('Products Model (Modular)', () => {
 
   it('can delete() a product', () => {
     let obj = { name: 'chair', description: 'recliner' };
-    return products.create(obj)
+    return products.post(obj)
       .then(record => {
         // console.log(record);
         return products.get(record._id)
