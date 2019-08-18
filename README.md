@@ -7,39 +7,63 @@ Express Routing &amp; Connected API
 ### Author: Brad Smialek
 
 ### Links and Resources
-* [submission PR](https://github.com/brad-smialek-401-advanced-javascript/lab-class-8-ExpressRouting/pull/1)
-* [travis]([![Build Status](https://www.travis-ci.com/brad-smialek-401-advanced-javascript/lab-class-8-ExpressRouting.svg?branch=master)](https://www.travis-ci.com/brad-smialek-401-advanced-javascript/lab-class-8-ExpressRouting))
-* [back-end](http://xyz.com) (when applicable)
-* [front-end](http://xyz.com) (when applicable)
 
-#### Documentation
-* [api docs](http://xyz.com) (API servers)
+* [submission PR](http://xyz.com)
+* [travis]([![Build Status](https://www.travis-ci.com/brad-smialek-401-advanced-javascript/lab-class-8-ExpressRouting.svg?branch=master)](https://www.travis-ci.com/brad-smialek-401-advanced-javascript/lab-class-8-ExpressRouting))
+
 
 
 ### Modules
-#### `modulename.js`
+#### `categories.js`
+#### `products.js`
+#### `mongo.js`
+#### `router.js`
+
+
 ##### Exported Values and Methods
+#### `Class Products`
+#### `Class Categories`
+#### `Products schema`
+#### `Categories schema`
+#### `Class Model`
+#### `get, post update, delete`
+#### `router.js`
 
-###### `foo(thing) -> string`
-Usage Notes or examples
 
-###### `bar(array) -> array`
-Usage Notes or examples
 
 ### Setup
 #### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+* `PORT` - 3000
+* `MONGODB_URI` - 'mongodb://localhost:27017/class-08';
 
 #### Running the app
-* `npm start`
-* Endpoint: `/foo/bar/`
+* `nodemon`
+* Endpoint:  get `/api/v1/categories`
   * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
+* Endpoint: post `/api/v1/categories`
   * Returns a JSON object with xyz in it.
+* Endpoint:  get `/api/v1/categories/:id`
+  * Returns a JSON object with abc in it.
+* Endpoint: put `/api/v1/categories/:id`
+  * Returns a JSON object with xyz in it.
+* Endpoint: delete `/api/v1/categories/:id`
+  * Returns a JSON object with abc in it.
+
+* Endpoint: `/api/v1/products`
+  * Returns a JSON object with xyz in it.
+* Endpoint: `/api/v1/products`
+  * Returns a JSON object with abc in it.
+* Endpoint: `/api/v1/products/:id`
+  * Returns a JSON object with xyz in it.
+* Endpoint: `/api/v1/products/:id`
+  * Returns a JSON object with abc in it.
+* Endpoint: `/api/v1/products/:id`
+  * Returns a JSON object with xyz in it.
+
+
   
 #### Tests
-* How do you run tests?
+* npm test with jest
 * What assertions were made?
 * What assertions need to be / should be made?
 

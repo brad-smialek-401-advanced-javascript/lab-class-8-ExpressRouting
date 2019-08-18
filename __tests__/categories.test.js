@@ -1,7 +1,7 @@
-const Categories = require('../../models/categories/categories.js');
-// let categories = new Categories();
+const supergoose = require('./supergoose.js');
 
-const supergoose = require('./supergoose');
+const Categories = require('../models/categories/categories.js');
+
 
 let categories = new Categories;
 
@@ -78,3 +78,5 @@ describe('Categories Model (Modular)', () => {
   });
   
 });
+
+

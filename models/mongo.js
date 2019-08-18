@@ -7,8 +7,9 @@ class Model {
    * Model Constructor
    * @param schema {object} - mongo schema
    */
-  constructor(schem) {
+  constructor() {
     this.schema = this.schema;
+    console.log('this.schema', this.schema);
   }
 
   /**
@@ -32,6 +33,7 @@ class Model {
    */
   post(record) {
     let newRecord = new this.schema(record);
+    console.log('newrecord is :', newRecord);
     return newRecord.save();
   }
 
@@ -42,7 +44,7 @@ class Model {
    * @returns {*}
    */
   update(_id, record) {
-    return this.schema.findByIdAndUpdate(_id, record, { new: true });
+    return this.schema.findByIdAndModify(_id, record);
   }
 
   /**
@@ -57,3 +59,7 @@ class Model {
 }
 
 module.exports = Model;
+
+
+
+
