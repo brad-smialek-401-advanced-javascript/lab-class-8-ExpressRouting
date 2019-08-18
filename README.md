@@ -7,13 +7,10 @@ Express Routing &amp; Connected API
 ### Author: Brad Smialek
 
 ### Links and Resources
+
 * [submission PR](http://xyz.com)
 * [travis]([![Build Status](https://www.travis-ci.com/brad-smialek-401-advanced-javascript/lab-class-8-ExpressRouting.svg?branch=master)](https://www.travis-ci.com/brad-smialek-401-advanced-javascript/lab-class-8-ExpressRouting))
-* [Heroku](http://xyz.com) 
 
-
-#### Documentation
-* [api docs](http://xyz.com) (API servers)
 
 
 ### Modules
